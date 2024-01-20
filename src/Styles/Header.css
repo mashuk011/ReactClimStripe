@@ -1,0 +1,469 @@
+
+/* _______________
+Our Header CSS code
+____________________________ */
+
+.main-header-bx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+.top-header-comp{
+    position: relative;
+    width: 100%;
+    border-bottom: .01rem solid #eeeeee95;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+
+    
+}
+
+.top-header-comp:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.132);
+    z-index: -1;
+
+}
+
+.top-header-flex-bx{
+    position: relative;
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-topheader-links-flex-bx{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.5rem;
+}
+
+.left-topheader-links-flex-bx li{
+    position: relative;
+}
+
+.left-topheader-links-flex-bx li:before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -2rem;
+        width: .15rem;
+        height: 100%;
+        background-color: #efefef;
+}
+
+
+.left-topheader-links-flex-bx li:nth-child(4):before{
+    display: none;
+}
+
+.left-topheader-links-flex-bx li a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.45rem;
+    letter-spacing: .55px;
+    color: #fff;
+    font-weight: 400;
+    transition: 500ms ease;
+    letter-spacing: .5px;
+
+}
+
+.left-topheader-links-flex-bx li a:hover{
+    color: #1678e8;
+}
+
+.right-top-header-flex-bx{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.download-btn{
+    position: relative;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    transform: translateY(2px);
+}
+
+.download-btn img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+.right-top-header-flex-bx span{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .4px;
+}
+
+.header-comp{
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    padding: 2rem 1.78rem;
+    z-index: 99999;
+    backdrop-filter: blur(5px);
+
+}
+
+.dark-logo{
+    display: none;
+}
+
+.header-comp.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: headerpopup .78s linear forwards;
+    z-index: 99999;
+
+}
+
+.header-comp.sticky .dark-logo{
+    display: block;
+    
+}
+
+
+.header-comp.sticky .light-logo{
+    display: none;
+}
+
+
+@keyframes headerpopup {
+    0%{
+        transform: translateY(-70%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header-comp.sticky:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #fff2; */
+    background-color: #fff;
+    border: .1rem solid rgba(255, 255, 255, 0.4);
+    z-index: -1;
+}
+
+.header-comp.sticky .nav-links li a{
+    color: #000;
+}
+
+    /* background: linear-gradient(rgba(238, 231, 231, 0.133), transparent); */
+/*  */
+
+.header-container{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.header-flex-bx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    position: relative;
+    width: 14rem;
+}
+
+.header-logo img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar,.nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition1);
+
+}
+
+.nav-links li{
+    position: relative;
+    width: 100%;
+    transition: var(--transition1);
+    padding: .65rem 1.5rem;
+    text-align: center;
+
+}
+
+.nav-links li:nth-child(2){
+    padding: .65rem 1.78rem;
+
+}
+
+.nav-links li:nth-child(2) a{
+            margin-left: -.78rem;    
+}
+
+/* .nav-links li:nth-child(3):before{
+    content: "\f107";
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    right: -.3rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #fff;
+    transition: var(--transition1);
+} */
+
+.nav-links li a{
+    position: relative;
+    width: 100%;
+    font-size: 1.87rem;
+    /* color: #010101; */
+    color: #fff;
+    font-weight: 500;
+    transition: var(--transition1);
+    
+}
+
+.nav-links li a:hover,.nav-links li:hover:before{
+    color: #2667ff;
+}
+
+.li-serv-dropd-dwn ul{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 15rem;
+    height: initial;
+    background-color: #fff;
+    border-radius: .3rem;
+    transition: 600ms ease;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.li-serv-dropd-dwn a{
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    
+}
+
+
+.li-serv-dropd-dwn a i{
+    font-size: 1.2rem;
+    transform: translateY(1.4px);
+}
+
+.li-serv-dropd-dwn:hover ul{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.left-topheader-links-flex-bx li.tplinkactive a{
+    color: #2667ff;
+}
+
+.li-serv-dropd-dwn ul li{
+    position: relative;
+    width: 100%;
+}
+
+.li-serv-dropd-dwn ul li a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: #010101;
+    font-size: 1.55rem;
+    text-align: left;
+}
+
+.header-btns-flex-bx{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.head-btn{
+    position: relative;
+    width: 15rem;
+    padding: .78rem .56rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    gap: .87rem;
+    background-color: transparent;
+    border: none;
+    background-color: #165a63;
+    border: .15rem solid #165a63;
+    border-radius: .5rem;
+    cursor: pointer;
+    z-index: 5;
+    overflow: hidden;
+    transition: 500ms ease;
+}
+
+.head-btn:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150%;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: left;
+    transition: var(--transition2);
+    transform: translateY(-150%) rotate(-15deg) translateX(-50%);
+    z-index: -1;
+    transition: var(--transition1);
+
+}
+
+
+
+.head-btn:hover:before{
+    transform: translateY(0%) rotate(0) translateX(-50%);
+
+}
+
+.head-btn:hover{
+    border-color: #010101;
+    color: #010101;
+}
+
+.head-btn-img{
+    position: relative;
+    width: 3rem;
+}
+
+.head-btn-img img{
+    width: 100%;
+    height: auto;
+    margin-top: .4rem;
+
+}
+
+.head-btn-img img{
+    width: 100%;
+    height: auto;
+}
+
+.head-btn2{
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    transition: var(--transition1);
+}
+
+.head-btn2:before{
+    background-color: #fff;
+}
+
+
+.head-btn2:hover{
+    color: #010101;
+}
+
+.comn-btn{
+    position: relative;
+    width: 13rem;
+    padding: 1.3rem .5rem;
+    display: grid;
+    place-items: center;
+    background-color: #073940;
+    font-size: 1.67rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border: .2rem solid #073940;
+    border-radius: .5rem;
+    transition: var(--transition2);
+    cursor: pointer;
+    z-index: 5;
+    overflow-x: hidden;
+}
+
+.comn-btn:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150%;
+    height: 100%;
+    background-color: #073940;
+    transform-origin: left;
+    transition: var(--transition2);
+    transform: translateY(-150%) rotate(-15deg) translateX(-50%);
+    z-index: -1;
+}
+
+.comn-btn:hover:before{
+    transform: translateY(0%) rotate(0) translateX(-50%);
+
+}
+
+.comn-btn:hover{
+    border-color: #073940;
+    color: #fff;
+}
+
+
+
+.comn-btn2{
+    background-color: transparent;
+    color: #010101;
+    border-color: #010101;
+}
+
+.comn-btn2:hover{
+    color: #fff !important;
+}

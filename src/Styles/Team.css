@@ -1,0 +1,157 @@
+
+/* _____________
+ Our Team CSS Styling code
+ _______________________________ */
+
+.team-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 6rem;
+    padding-inline: 1.78rem;
+    background: url('../images/team-bg.png')no-repeat center center/cover;
+}
+
+.team-heading{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.team-heading span{
+    font-size: 1.55rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #3d64ff;
+}
+
+.team-heading h2{
+    font-size: 4rem;
+    color: #222121;
+    font-weight: 600;
+    letter-spacing: 1px;
+    max-width: 50rem;
+
+}
+
+.team-grid{
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    column-gap: 4rem !important;
+    row-gap: 3rem !important;
+
+}
+
+.team-bx{
+    position: relative;
+    width: 100%;
+    padding: 4rem 2.5rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* box-shadow: 0 4px 25px #e9eef4; */
+    box-shadow: 38px 45px 93px -10px rgba(0, 0, 0, 0.05);
+
+}
+
+.team-bx:hover{
+    /* animation: shakeanimt .35s ease forwards; */
+    box-shadow: 25px 25px 81px 0px rgba(95, 63, 176, 0.2);
+
+}
+
+/* }
+
+    @keyframes shakeanimt {
+
+        0%{
+            transform: rotate(0deg);
+        }
+
+        25%{
+            transform: rotate(-2deg);
+        }
+
+        35%{
+            transform: rotate(2deg);
+
+        }
+        55%{
+            transform: rotate(-2deg);
+
+        }
+        75%{
+            transform: rotate(2deg);
+
+        }
+        
+        85%{
+            transform: rotate(-2deg);
+
+        }
+
+        100%{
+            transform: rotate(0deg);
+
+        }
+    } */
+
+
+.team-img{
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 2rem;
+}
+
+.team-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-det-bx h4{
+    font-size:2rem;
+    font-weight: 600;
+    letter-spacing: .65px;
+    color: #141212;
+    margin-bottom: .5rem;
+}
+
+.team-det-bx p{
+    font-size: 1.55rem;
+    color: #141212;
+    font-weight: 400;
+    letter-spacing: .6px;
+}
+
+.team-soc-flex-bx{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-soc-flex-bx a{
+    font-size: 1.55rem;
+    color: #3f3c3c;
+    transition: var(--transition1);
+}
+
+.team-soc-flex-bx a:hover{
+    color: #3d64ff;
+}
+
+/* f4faff */
+
+
+ /* 0 4px 15px rgba(0, 0, 0, 0.08); */

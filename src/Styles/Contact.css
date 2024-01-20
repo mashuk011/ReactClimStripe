@@ -1,0 +1,172 @@
+
+/* _________________________ 
+our contact css code
+________________________ */
+
+.contact-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 3.5rem;
+    margin-block: 2rem;
+}
+
+.cont-grid{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    column-gap: 5rem;
+    row-gap: 5rem;
+}
+
+.left-contact-form-bx {
+    position: relative;
+    width: 100%;
+}
+
+.left-contact-form-bx span{
+    font-size: 1.4rem;
+    letter-spacing: .4px;
+    font-weight: 500;
+    color: #1352e4;
+
+}
+
+.left-contact-form-bx h2{
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form-bx{
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.contct-form-grid{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.contct-bx{
+    position: relative;
+    width: 100%;
+    height: 5.76rem;
+    background-color: #f4f5f8;
+    border-radius: .55rem;
+}
+
+.contct-bx input , .contc-tbx textarea{
+    width: 100%;
+    height: 100%;
+    padding-inline: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .5px;   
+    background-color: transparent;
+    border: none;
+
+}
+
+.contc-tbx textarea{
+    resize: none;
+    background-color: #f4f5f8;
+    height: 15rem;
+    border-radius: .55rem;
+    padding: 2rem 2rem;
+    font-weight: 400;
+
+}
+
+.contct-bx input::placeholder , .contc-tbx textarea::placeholder{
+    font-weight: 400;
+    color: #3a3939;
+}
+
+.contc-tsubmit-btn{
+    position: relative;
+    width: max-content;
+    margin-top: 2.55rem;
+    padding: 1.87rem 4rem;
+    font-size: 1.55rem;
+    background-color: #165a63;
+    border: .1rem solid #165a63;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: #ffff;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: .87px;
+}
+
+.right-contact-info-bx p{
+    font-size: 1.65rem;
+    letter-spacing: .55px;
+    font-weight: 400;
+    max-width: 55rem;
+    color: #8c8b8b;
+    line-height: 1.87;
+}
+
+.office-address-main-bx{
+    margin-top: 5rem;
+    position: relative;
+    width: 100%;
+
+}
+
+.office-addrs-bx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-bottom: 1.65rem;
+}
+
+.left-addrs-icon{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #165a63;
+    font-size: 2.76rem;
+    color: #fff;
+    transition: 500ms ease;
+}
+
+.office-addrs-bx:hover  .left-addrs-icon{
+    background-color: #000;
+
+}
+
+.addrs-info{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addrs-info h6{
+    margin-bottom: .87rem;
+    font-size: 1.5rem;
+    letter-spacing: .3px;
+    font-weight: 700;
+    color: #2c2c2d;
+
+}
+
+.addrs-info p{
+    margin-bottom: 0;
+    font-size: 1.87rem;
+}

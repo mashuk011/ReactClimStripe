@@ -1,0 +1,246 @@
+
+/* __________________________
+  Our Mission vision comp CSS code Styling 
+  ________________________________________________ */
+
+  .vision-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 4rem;
+    padding-inline: 1.78rem;
+    background: #f4f1ec;
+  }
+
+  .vision-heading{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .vision-heading h2{
+    font-size: 4rem;
+    max-width: 50rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1a1919;
+  }
+
+  .vision-tabs-main-bx{
+    position: relative;
+    width: 100%;
+  }
+
+  .tabs-grid-bx{
+    position: relative;
+    width: 100%;
+  }
+
+  .right-vision-img-bx{
+    position: relative;
+    width: 100%;
+    height: 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition2);
+
+  }
+
+  .vision-img{
+    position: relative;
+    width: 60%;
+    height: 40rem;
+    
+  }
+
+  .vision-img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius:34% 66% 70% 30% / 36% 45% 55% 64%  ; */
+    /* border-radius: 37% 63% 75% 25% / 62% 53% 47% 38% ; */
+    border-radius: 37% 63% 75% 25% / 61% 54% 46% 39%  ;
+    /* border-radius: 33% 67% 76% 24% / 57% 43% 57% 43% ;
+    border-radius: 33% 67% 65% 35% / 48% 43% 57% 52% ; */
+  }
+
+
+
+  .left-vision-info-bx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    transition: var(--transition2);
+ 
+  }
+
+  .left-vision-info-bx h3{
+    font-size: 3.78rem;
+    font-weight: 600;
+    color: #1a1919;
+  }
+
+  .left-vision-info-bx p{
+    font-size: 1.78rem;
+
+  }
+
+  .environment-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -4.5rem;
+    width:13.5rem;
+    height: 13.5rem;
+    background-color: #162d4e;
+    display: grid;
+    place-items: center;
+    /* border-radius: 32% 68% 33% 67% / 61% 29% 71% 39%  ; */
+    border-radius: 63% 37% 37% 63% / 57% 80% 20% 43%  ;
+
+  }
+
+  .environment-icon img{
+    width: 5rem;
+    height: auto;
+  }
+
+ 
+
+  @keyframes showupTabschild2 {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+  
+
+  /* .tabs-grid-bx-abs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
+  .tab-btns-flex-bx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: .15rem solid #162d4e;
+    margin-bottom: 1rem;
+  }
+
+  .tab-btn-bx{
+    position: relative;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.78rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #162d4e;
+    padding: 1.5rem.56rem;
+    cursor: pointer ; 
+    z-index: 10;
+    transition: 500ms ease;
+  }
+
+  .tab-btn-bx.tabbtnactive{
+    background-color: #1678e8;
+  }
+
+  .tab-btn-icon{
+    position: relative;
+    width: 3rem;
+    margin-top: .5rem;
+  }
+
+  .tab-btn-icon img{
+    width: 100%;
+    height: auto;
+  }
+
+  .tabs-grid-bx{
+    transition: var(--transition2);
+    opacity: 0;
+    
+  }
+
+  .tabs-grid-main-bx{
+    position: relative;
+    width: 100%;
+  }
+
+  .tabs-grid-bx-abs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tabs-grid-bx.tabsactive{
+    z-index: 9;
+    opacity: 1;
+  }
+
+  .tabs-grid-bx .left-vision-info-bx{
+    transform: translateX(-50px) ;
+    opacity: 0 ;
+  }
+
+  .tabs-grid-bx .right-vision-img-bx{
+    transform: translateX(50px) ;
+    opacity: 0 ;
+  }
+
+  .tabs-grid-bx.tabsactive .left-vision-info-bx{
+   animation: showupTabschild1 .78s cubic-bezier(0.575, 0.885, 0.675, 1.275) forwards;
+  }
+
+  .tabs-grid-bx.tabsactive .right-vision-img-bx{
+    animation: showupTabschild2 .78s cubic-bezier(0.575, 0.885, 0.675, 1.275) forwards;
+   }
+
+  @keyframes showupTabschild1 {
+        0%{
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+  }
+
+  @keyframes showupTabschild2 {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

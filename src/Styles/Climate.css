@@ -1,0 +1,278 @@
+
+/* _____________________ 
+Our Climate CSS Styling code
+____________________________________ */
+
+.climate-comp{
+    position: relative;
+    width: 100%;
+    padding: 20rem 1.78rem;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #eff3fd;
+
+}
+
+.climate-comp:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/cloud.png')no-repeat center center/cover;
+    z-index: -1;
+    animation: slidebg 55s linear infinite alternate; 
+    opacity: 0.67;
+}
+
+@keyframes slidebg {
+    0%{
+        transform: translateX(-30%);
+    }
+
+    100%{
+        transform: translateX(80%);
+    }
+}
+
+.climate-grid{
+    position: relative;
+    width: 100%;
+}
+
+.climate-info{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    z-index: 10;
+    background-color: #dfe8ff;
+    border-radius: .5rem;
+    padding: 3rem 3rem;
+}
+
+.climate-info h2{
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: #1b1a1a;
+}
+
+.climate-info p{
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.green-trees-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    opacity: 0.78;
+}
+
+.green-trees-img img{
+    width: 100%;
+    height: auto;
+}
+
+.green-grass-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10.5rem;
+    transform-origin: bottom;
+    transition: var(--transition2);
+    opacity: 0.5;
+
+}
+
+.green-grass-img img{
+    width: 100%;
+    height: auto;
+    animation: animategrass 4s linear infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes animategrass {
+    0%{
+        transform: rotate(-6deg);
+    }
+
+    100%{
+        transform: rotate(7deg);
+    }
+}
+
+.skull-img{
+    position: absolute;
+    bottom: -1rem;
+    right: 65rem;
+    opacity: 0.5;
+
+}
+
+.sun-img{
+    position: absolute;
+    top: 5.78rem;
+    right: 22rem;
+    width: 12rem;
+    animation: sunmove 10s ease-in-out infinite alternate;
+    z-index: 7;
+    opacity: 0.7;
+}
+
+@keyframes sunmove {
+    0%{
+        transform: translateX(20px);
+    }
+
+    100%{
+        transform: translateX(-20px);
+    }
+}
+
+.sun-img img{
+    width: 100%;
+    height: auto;
+    animation: sunanimate 25s linear infinite alternate;
+}
+
+@keyframes sunanimate {
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.brown-tree-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.brown-tree-img img{
+    width: 100%;
+    height: auto;
+    /* animation: movetrees 5s ease-in-out infinite alternate; */
+}
+
+@keyframes movetrees {
+    0%{
+        transform: translateX(35px);
+    }
+
+    100%{
+        transform: translateX(-5px);
+    }
+}
+
+.bird-img{
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 8.5rem;
+    z-index: 10;
+    animation: movebird 30s linear infinite;
+}
+
+.bird-img img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes movebird {
+    0%{
+        transform: translateX(0%) ;
+    }
+
+    10%{
+        transform: translateX(200%) translateY(-25px);
+    }
+
+
+    20%{
+        transform: translateX(400%) translateY(30px) rotate(9deg); 
+
+    }
+
+    30%{
+        transform: translateX(500%) translateY(29px) rotate(-5deg);
+
+    }
+
+    40%{
+        transform: translateX(700%) translateY(35px) rotate(5deg);
+
+    }
+
+    50%{
+        transform: translateX(800%) translateY(-10px) rotate(-10deg);
+
+    }
+
+    60%{
+        transform: translateX(1000%) translateY(30px) rotate(7deg);
+
+    }
+    70%{
+        transform: translateX(1100%) translateY(-20px) rotate(-8deg);
+
+    }
+    80%{
+        transform: translateX(1200%) translateY(20px) rotate(8deg);
+
+    }
+    90%{
+        transform: translateX(1500%) translateY(-30px) rotate(-12deg);
+
+    }
+    100%{
+        transform: translateX(1800%) translateY(30px) rotate(-8deg);
+
+    }
+   
+    
+    
+}
+
+.climate-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.climate-img img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.climate-img .year-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: .87rem;
+    font-size: 2.13rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.climate-img .year-text2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: .87rem;
+    font-size: 2.13rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}

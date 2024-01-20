@@ -1,0 +1,223 @@
+
+
+/* __________________________
+  WasteFuture CSS code styling 
+  _____________________________________ */
+
+  .zero-waste-future-comp{
+    position: relative;
+    width: 100%;
+    padding: 8rem 1.78rem;
+    overflow: hidden;
+    /* background-color: #111215; */
+    background: #173258;
+    /* background: linear-gradient( 90deg , #2c737c 55.55% , #12454c); */
+    /* background: #0e1e2a; */
+    z-index: 10;
+  }
+
+  .zero-waste-future-comp:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/cloud-1.png')no-repeat center  center/cover;
+    z-index: -1;
+    animation: slidebg 55s linear infinite alternate; 
+  }
+
+
+
+@keyframes slidebg {
+  0%{
+      transform: translateX(-30%);
+  }
+
+  100%{
+      transform: translateX(80%);
+  }
+}
+
+  .comn-heading{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .comn-heading h2{
+    font-size: 4.56rem;
+    font-weight: 600;
+    color: #fff;
+    max-width: 58rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+
+  .z-w-f-grid{
+    margin-top: 5rem;
+    position: relative;
+    width: 100%;
+    column-gap: 5rem !important;
+  }
+
+  .z-w-f-bx{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    padding: 3rem 2rem;
+    /* background-color: #152633; */
+    background: repeating-conic-gradient(from var(--a), #f64f59 0% , #f64f59 5% , transparent 5% ,transparent 40% , #f64f59 50%);
+    filter: drop-shadow(0 10px 50px #0f1f2b);
+    animation: rotateanimbx 8s linear infinite;
+    animation-play-state: paused;
+    z-index: 10;
+
+  }
+
+
+
+  .z-w-f-bx:before{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 8px solid #173258;
+    background: #182a38;
+    z-index: -1;
+  }
+
+  /* .z-w-f-bx:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a) , #3a8604 0% , #3a8604 5% , transparent 5% ,transparent 40% , #3a8604 50%);
+    filter: drop-shadow(0 10px 50px #0f1f2b);
+    animation: rotateanimbx 8s linear infinite;
+    animation-play-state: paused;
+    animation-delay: -10.5s;
+    z-index: -2;
+  } */
+
+  
+  .z-w-f-bx:hover ,   .z-w-f-bx:hover:after{
+    animation-play-state: running;
+  }
+
+  @keyframes rotateanimbx {
+    0%{
+        --a : 0deg;
+    }
+    100%{
+        --a : 360deg;
+
+    }
+  }
+
+  
+  @property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+.z-w-f-main-det{
+    position: absolute;
+    inset: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    opacity: 1;
+    /* box-shadow: inset 0 10px 20px rgba(11, 23, 33, 0.655) */
+    /* box-shadow: inset 0 10px 20px rgba(0,0,0,0.5);
+    border-bottom: .1rem solid #ffffff40; */
+
+
+}
+
+  .z-w-f-img{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    z-index: 2;
+    
+  }
+
+  .z-w-f-img:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f64f59;
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  .z-icon{
+    width: 10rem;
+    transform: translateX(22px) translateY(-16px);
+
+  }
+
+  .z-icon img{
+    width: 100%;
+    height: auto;
+    animation: iconmove 4s linear infinite alternate;
+    transform-origin: bottom;
+    
+  }
+
+  @keyframes iconmove {
+    0%{
+        transform: translateY(-6px) rotate(3deg);
+    }
+
+    100%{
+        transform: translateY(6px) rotate(-3deg);
+
+    }
+    
+  }
+
+  .z-w-f-bx:nth-child(1) .z-w-f-det-bx h4{
+    max-width: 20rem !important;
+  }
+
+  .z-w-f-det-bx h4{
+    font-size: 1.87rem;
+    margin-top: 2rem;
+    color: #000;
+    max-width: 30rem;
+    text-transform: capitalize;
+  }
+
+
+
+  .z-w-f-det-bx button:before{
+    transform: translateY(-180%) rotate(-15deg) translateX(-50%);
+
+  }
+
+   .z-w-f-det-bx button{
+    width: max-content;
+    padding: .87rem ;
+    font-size: 1.3rem;
+    margin: 3rem auto 0 auto;
+    text-transform: uppercase;
+  }

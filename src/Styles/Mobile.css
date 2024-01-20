@@ -1,0 +1,104 @@
+
+/* ___________________
+Our Mobile Comp CSS code Styling 
+___________________________________ */
+
+.mobile-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 7rem;
+    padding-inline: 1.78rem;
+    /* background-color: rgb(4, 8, 45); */
+    /* background: #591c0f ; */
+    /* background: linear-gradient(135deg , #0b3b31  , #083238 ); */
+    background: linear-gradient(135deg , #7b2c11 , #591d0ff3 );
+    overflow: hidden;
+}
+
+.mobile-container{
+    max-width: 120rem;
+}
+
+.mobile-grid{
+    position: relative;
+    width: 100%;
+}
+
+.left-mobile-info-bx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    z-index: 10;
+
+}
+
+.left-mobile-info-bx h2{
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.left-mobile-info-bx p{
+    font-size: 1.87rem;
+    color: #ffffffba;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.mob-btns-flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.mob-btn{
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem;
+    width: 18rem !important;
+    justify-content: center;
+    text-align: center;
+    background-color: #0b4d59 !important;
+    border-color: #0b4d59;
+}
+
+.mob-btn:nth-child(2){
+    background-color: transparent !important;
+    color: #fff;
+}
+
+.mobile-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+}
+
+.mobile-img img{
+    width: 80%;
+    height: auto;
+}
+
+.blur-bx{
+    position: absolute;
+    bottom: -16rem;
+    right: -10rem;
+    width: 45rem;
+    height: 45rem;
+    background: linear-gradient(90deg,#350e05  , transparent);
+    border-radius: 50%;
+    opacity: .8;
+    filter: blur(50px);
+    z-index: 2;
+}

@@ -1,0 +1,419 @@
+/* _________ Our fonts import google fonts
+ ____________________ ______________________________*/
+
+ /* Poppins font ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+ /* Jost font ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reusable CSS codes ______________________________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Jost', sans-serif;
+
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  
+  
+}
+
+:root{
+  --transition1 : 500ms ease;
+  --transition2 : 700ms ease;
+  --transition3 : 900ms ease;
+  --transition4 : 1000ms linear;
+  --transition5 : 500ms linear;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3.4rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2.76rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.87rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+  font-size: 1.55rem;
+}
+
+p {
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #101010;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap {
+  gap: 2rem;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-gap {
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.common-container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.common-container2 {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.div-animate{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.div-animate p{
+  font-size: 1.65rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #2667ff;
+  /* transition: 1000ms ease-in-out; */
+}
+
+[data-reveal="left"]{
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+[data-reveal="left"].revealed{
+  animation: revealElementsleft 1.4s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 600ms;
+}
+
+@keyframes revealElementsleft {
+
+  0%{
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+  }
+
+  100%{
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+}
+
+
+
+/* Our custom selection scrollbar css code
+_________________________________________ */
+
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: .767rem;
+  
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #2667ff;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::selection{
+  background-color: #2667ff;
+  color: #fff;
+}
+
+.zero-waste-future-comp{
+  margin-top: -0.4rem;
+}
+
+.hero-btn{
+  background-color: #fff;
+  color: #073940;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+.hero-btn:hover:before{
+  background-color: #073940 !important;
+  color: #fff !important;
+}
+
+
+.hero-btn:hover{
+  border-color: #073940 !important;
+
+}
+
+.hero-btn2{
+  border-color: #fff !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  font-weight: 500;
+}
+
+
+
+.hero-btn2:hover:before{
+  background-color: #fff !important;
+}
+
+.hero-btn2:hover{
+  color: #073940 !important;
+}
+
+.mobile-comp{
+  background: linear-gradient(90deg , #073940 ,  #165a63);
+}
+
+.mob-btn{
+  background-color: #fff !important;
+}
+
+.mob-btn:before , .mob-btn2:before{
+  display: none !important;
+}
+
+.mob-btn:hover{
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+
+.mob-btn2{
+  width:18rem !important;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: center;
+  background-color: transparent ;
+  color: #fff !important;
+}
+
+.mob-btn2:hover{
+  background-color: #fff !important;
+  color: #073940 !important;
+}
+
+
+
+.insta-feed-comp {
+  position: relative;
+  width: 100%;
+  padding: 3.5rem 0 0 0;
+  background-color: #fcfbf8;
+}
+
+
+.insta-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.insta-heading p{
+  margin-bottom: 0;
+}
+
+
+.insta-feed-slider {
+  position: relative;
+  width: 100%;
+}
+
+.has-scrollbar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  margin-top: 5rem;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: .145rem;
+  background-color: transparent;
+  transition: 500ms ease;
+
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5rem;
+  transition: 500ms ease;
+
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #2BC2C6;
+}
+
+.scrollbar-items {
+  scroll-snap-align: start;
+}
+
+.insta-feed-bx {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+  transition: 500ms ease;
+  z-index: 2;
+}
+
+.insta-feed-bx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.4;
+  transition: 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+
+
+.insta-feed-bx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 500ms ease;
+
+}
+
+.insta-like-comment-flex-bx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: 500ms ease;
+
+}
+
+.post-edit-bx {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 500ms ease;
+
+}
+
+.post-edit-bx i {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.post-edit-bx span {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .65px;
+  display: block;
+}
+
+.insta-feed-bx:hover:before {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.insta-feed-bx:hover .insta-like-comment-flex-bx {
+  opacity: 1;
+}
